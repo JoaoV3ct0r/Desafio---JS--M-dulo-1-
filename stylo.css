@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+body{
+    background-color: #8A51FC;
+}
+
+.img-gif{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 16px auto;
+}
+
+.div-main{
+    width: 375px;
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    margin: auto;
+    padding: 44px 24px 23px;
+}
+
+
+label{
+    color: #777777;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+b{
+    color: #777777;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+}
+
+select, input{
+    color: #555555;    ;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+}
+
+button{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    background-color: #772FD3;
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    margin-bottom: 36px;
+    border-color: #00000040;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+button:hover{
+    opacity: 50%;
+}
+
+button:active{
+    opacity: 100%;
+    color: #772FD3;
+    background-color: white;
+}
+
+section{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 276px;
+    border-radius: 20px;
+    border: 1px solid #772FD3;
+    padding: 12px 100px;
+    text-align: center;
+}
+
+.currency{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.currency-value, .currency-value-to-convert{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.div-section1, .div-section2{
+    padding: 5px 0;
+}
+
+@media screen and (max-width: 700px) {
+    .img-gif{
+        display: none;
+    }
+    .div-main{
+        border-radius: 0;
+    }
+}
