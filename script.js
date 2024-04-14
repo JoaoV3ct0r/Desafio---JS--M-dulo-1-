@@ -7,13 +7,19 @@ function convertValues(){                 //  Função
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert") // Valor em real
     const currencyValueConverted = document.querySelector(".currency-value") // outras moedas
 
-
+    const realToday = 1
     const dolarToday = 5.12
     const euroToday = 5.46
     const libraToday = 6.38
     const bitcoinToday = 327.43479
 
 
+    if(currencySelect.value == "real2"){ // Mudar texto "real2" a partir input
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", { 
+            style: "currency",
+            currency: "BRL"       
+        }).format(inputCurrencyValue / realToday) 
+    }
     if(currencySelect.value == "dolar"){ // Select estiver "dolar" ele entra aqui
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
@@ -41,15 +47,19 @@ function convertValues(){                 //  Função
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", { // Mudar texto "Real" a partir input
         style: "currency",
-        currency: "BRL"       
+        currency: "BRL"
     }).format(inputCurrencyValue)
-      
+
 }
 
 function changeCurrency(){ // troca de select, muda imagem e nome
     const currencyName = document.querySelector("#currency-name")
     const currencyImg = document.querySelector(".img-dolar")
 
+    if(currencySelect.value == "real2"){
+        currencyName.innerHTML = "Real"
+        currencyImg.src = "./Assets/brasil 2.png"
+    }
     if(currencySelect.value == "dolar"){
         currencyName.innerHTML = "Dólar"
         currencyImg.src = "./Assets/estados-unidos (1) 1.png"
