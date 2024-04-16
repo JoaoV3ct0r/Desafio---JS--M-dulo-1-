@@ -149,6 +149,12 @@ section{
     padding: 5px 0;
 }
 
+@media screen and (max-width: 670px) {
+    .div-main{
+        width: 667px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     main{
         margin: 0;
